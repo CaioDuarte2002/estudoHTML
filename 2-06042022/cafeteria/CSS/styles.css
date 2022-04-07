@@ -1,0 +1,114 @@
+/* 
+Arquivo de CSS(Cascade Style Sheet - Folha de Estilo em Cascata)
+é utilizado para fazer a camada de formatação de um
+site em html.
+*/
+/* 
+Vamos formatar todos os elementos presente em uma página 
+html usando o *(asterisco) e aplicar margem externa e interna
+zero(0) e realizar o ajuste das caixas em html
+*/
+
+* {
+  margin: 0px; /*Margem externa das caixas*/
+  padding: 0px; /*Margem interna das caixas*/
+  /*Ajuste de padding das caixa sem a soma com a 
+    largura*/
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px; /*aplicar altura ao cabeçalho*/
+  /*aplicar imagem de fundo ao cabecalho*/
+  background-image: url("../img/cafeteria2.jpg");
+  /*ajustar o tamanho da imagem de fundo*/
+  background-size: 90% cover;
+  /*alterar a posição vertical da imagem*/
+  background-position-y: -400px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 30pt;
+  color: white;
+  /*
+    vamos aplicar uma sombra:
+    -Primeiro elemento é a posição horizontal da sombra;
+    -Segundo elemento é a posição vertical da sombra;
+    -Terceiro elemento é o efeito de esfumaçado da sombra;
+    -Quarto elemento é a cor
+    */
+  text-shadow: 2px 2px 5px rgba(25, 139, 204, 0.712);
+}
+
+/*Vamos fazer a formatação da barra de navegação*/
+nav {
+  background-color: rgba(25, 139, 204, 0.712);
+  padding: 10px;
+  text-align: center;
+}
+nav ul li {
+  /*dispor os elementos em linha*/
+  display: inline-block;
+  /*espaço entre os links*/
+  margin: 5px;
+}
+nav ul li a {
+  color: white;
+  font-family: arial;
+  /*tirar o sublinhado*/
+  text-decoration: none;
+}
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgba(25, 139, 204, 0.712);
+  /* permitir com que o rodape fique com seu conteudo flexivel */
+  display: flex;
+  /* dispor conteudo em linha */
+  flex-direction: row;
+  /* ajustar conteudo ao centro com justify-content e align-itens */
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+footer div {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+}
+/* quando tem id nao precisa de footer */
+#endereco {
+  font-family: Arial;
+  font-size: 12pt;
+  color: white;
+  width: 500px;
+  text-align: left;
+  position: absolute;
+  left: 0px;
+}
+
+#redes {
+  position: absolute;
+  right: 50px;
+}
+
+#redes ul {
+  /* retirar as bolinhas de marcaçao */
+  list-style: none;
+}
+/* vamos dispor as imagens das redes em linha com display
+inline-block */
+#redes ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
