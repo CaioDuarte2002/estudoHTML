@@ -202,3 +202,76 @@ da caixa imghistoria */
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* fim da historia */
+
+/* estilos para o cardapio */
+
+h3 {
+  /* converter as letras maiusculas */
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-family: white;
+  color: rgb(21, 190, 241);
+  margin: 30px;
+  text-shadow: white;
+}
+
+#linha {
+  /* realizar a qubra de linha para os demais produtos 
+  que forem adicionados */
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: 10px;
+}
+
+#linha #produto {
+  width: 40%;
+  margin: 10px;
+  /* determinar que o produto sera flexivel */
+  display: flex;
+  flex-direction: row;
+}
+
+#linha #produto #imgprod,
+#linha #produto #descricao {
+  width: 48%;
+  margin: 10px;
+  transition: ease 0.5s;
+}
+
+#linha #produto #imgprod img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20pt;
+  margin: 10px;
+}
+
+h5 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  margin: 10px;
+}
+
+#linha #produto:hover {
+  background-color: turquoise;
+  color: white;
+  cursor: pointer;
+}
+
+h6 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: darkred;
+  font-size: 12pt;
+  margin: 10px;
+}
+
+/* fim cadarpio */
