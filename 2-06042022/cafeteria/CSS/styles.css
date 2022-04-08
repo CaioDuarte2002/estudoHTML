@@ -1,0 +1,64 @@
+/* 
+arquivo de css (cascade style sheet) - folha de estilo em cacata)
+é utilizado para fazer a camada de formataçao de um site em html
+*/
+
+/* 
+vamos formatar todos os elementos presente em uma pagina
+html usando o * (asterisco) e aplicar margem externa e interna zero (0) e
+realizar o ajuste das caixas em html
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 300px;
+ background-image: url("../img/cafeteria2.jpg");    
+  /* ajustar o tamanho */
+  background-size 100% cover;
+  /* alterar posiçao vertical */
+  background-position-y: -400px;
+  padding-top: 100px;
+  text-align: center;
+}
+h1 {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30pt;
+    color: rgb(255, 255, 255);
+    /* vamos aplicar a sombra */
+    text-shadow:2px 2px 5px rgb(18, 163, 230);
+    /* o primeiro  elemento e a posiçao horizontal 
+    segundo é vertical
+    terceiro é efeito esfumçado
+    quarto é a cor
+    
+    */
+
+
+
+
+}
+
+/* vamos fazer a formataçao da barra de navegaçao */
+nav{
+background-color: brown;
+padding: 10px;
+text-align: center;
+}
+nav ul li{
+/* dispor os elementosnem linha */
+display: inline-block;
+/* espaço entre os links */
+margin: 5px;
+
+
+}
+    nav ul li a{
+color: rgb(0, 118, 197);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* tirar o sublinhado */
+text-decoration: none;
+    }
