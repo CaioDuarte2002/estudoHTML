@@ -279,12 +279,49 @@ h5 {
 }
 
 /* fim do estilo do mapa */
-h6 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: darkred;
-  font-size: 12pt;
-  margin: 10px;
+
+/* inicio de contato */
+
+main form {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 20px black;
+  text-align: left;
 }
 
-/* fim cadarpio */
+main form input,
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-family: Verdana;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+}
+
+main form input[type="tel"],
+main form select {
+  width: 49%;
+}
+main form textarea {
+  height: 100px;
+}
+main form input[type="submit"] {
+  margin-left: 40%;
+
+  width: 20%;
+  background-color: aqua;
+  color: white;
+  border: 0px;
+  transition: ease 0.5s;
+}
+main form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: black;
+}
+/* fim de contato */
