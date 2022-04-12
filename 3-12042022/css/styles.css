@@ -1,0 +1,105 @@
+/* classes para alterar a cor do plano
+de fundo */
+
+.bgRed {
+  background-color: red;
+}
+
+.bgYellow {
+  background-color: yellow;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+/* classes para a cor do texto */
+
+.txtRed {
+  color: red;
+}
+
+.txtWhite {
+  color: white;
+}
+
+.txtYellow {
+  color: yellow;
+}
+
+.txtBlack {
+  color: black;
+}
+
+/* classes para formatar blocos de texto */
+
+.titulo1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30pt;
+  font-weight: bold;
+  /* bold = adicionar um negrito mais fraco */
+}
+
+.titulo2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25pt;
+  font-weight: bold;
+  /* bold = adicionar um negrito mais fraco */
+}
+
+.titulo3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+  /* bold = adicionar um negrito mais fraco */
+}
+
+.txt1 {
+  font-family: arial;
+  font-size: 12pt;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.txt2 {
+  font-family: arial;
+  font-size: 10pt;
+  line-height: 25px;
+  text-align: justify;
+}
+
+/* classes para imagens */
+
+.img100 {
+  width: 100%;
+  height: auto;
+}
+
+.img80 {
+  width: 80%;
+  height: auto;
+}
+
+.img60 {
+  width: 60%;
+  height: auto;
+}
+
+.img40 {
+  width: 40%;
+  height: auto;
+}
+
+.anima {
+  transition: ease 0.5s;
+}
+
+.anima:houver {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.imgCentro {
+ display: flex;
+ justify-content: center;
+ align-items: center;
